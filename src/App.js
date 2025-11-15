@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import "./styles/themes.css"; // 🎨 Theme & weather backgrounds
+import "./styles/themes.css"; 
 
 // Components
 import SearchBar from "./components/SearchBar";
@@ -14,7 +14,7 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  const API_KEY = process.env.REACT_APP_WEATHER_API_KEY; // ⚠️ Replace with your valid API key
+  const API_KEY = process.env.REACT_APP_WEATHER_API_KEY; 
 
   // 🔍 Fetch weather by city name
   const fetchWeather = async (city) => {
@@ -89,7 +89,7 @@ function App() {
                   hour: "2-digit",
                   minute: "2-digit",
                 }),
-                uvIndex: Math.floor(Math.random() * 10), // Mock UV (free plan)
+                uvIndex: Math.floor(Math.random() * 10), 
               }}
             />
           </>
