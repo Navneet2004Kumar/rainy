@@ -1,0 +1,104 @@
+.hourly-forecast {
+  margin-top: 1.5rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 1.5rem;
+  color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  animation: fadeUp 0.8s ease;
+}
+
+.hourly-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.hourly-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding-bottom: 0.5rem;
+  scroll-behavior: smooth;
+}
+
+.hourly-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+.hourly-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+.hourly-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.hourly-item {
+  flex: 0 0 auto;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 15px;
+  padding: 1rem;
+  width: 90px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.hourly-item:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.hour-time {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.hour-icon {
+  width: 40px;
+  height: 40px;
+  margin: 5px 0;
+}
+
+.hour-icon-text {
+  font-size: 1.5rem;
+  display: block;
+  margin: 5px 0;
+}
+
+.hour-temp {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.hour-desc {
+  font-size: 0.8rem;
+  opacity: 0.9;
+  text-transform: capitalize;
+}
+
+/* Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .hourly-item {
+    width: 75px;
+    padding: 0.8rem;
+  }
+  .hour-temp {
+    font-size: 1rem;
+  }
+}

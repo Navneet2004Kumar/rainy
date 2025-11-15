@@ -1,0 +1,28 @@
+/* Default Light Theme */
+body.light {
+  background: linear-gradient(to right, #89f7fe, #66a6ff);
+  color: #222;
+}
+
+/* Dark Theme */
+body.dark {
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: #f1f1f1;
+}
+
+/* Optional: dynamic colors based on weather types */
+body.sunny {
+  background: linear-gradient(to right, #f6d365, #fda085);
+}
+
+body.rainy {
+  background: linear-gradient(to right, #00c6fb, #005bea);
+}
+
+body.cloudy {
+  background: linear-gradient(to right, #757f9a, #d7dde8);
+}
+
+body.snow {
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+}
