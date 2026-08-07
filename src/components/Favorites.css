@@ -1,0 +1,77 @@
+.favorites {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 12px;
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  backdrop-filter: blur(10px);
+}
+
+.favorites h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.favorites-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.favorite-item {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.favorite-item:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.favorite-item span {
+  color: #fff;
+  font-weight: 500;
+}
+
+.remove-btn {
+  background: transparent;
+  border: none;
+  color: #ff6b6b;
+  cursor: pointer;
+}
+
+.add-fav {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.add-fav input {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.add-fav button {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  background: #4c8bf5;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-fav button:hover {
+  background: #3b6cd9;
+}
